@@ -9,12 +9,116 @@
     <script src="./app.js" defer></script>
 </head>
 <body>
-    <header>
 
 
-    <form action="">
-        <label for="">NOM et </label>
+          <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>Eleve</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>parent</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!--
+        - #INFO_ELEVE
+      -->
+
+    <header class="page column">
+        <h1>FORMULAIRE D'INSCRIPTION</h1>
+        <h2>Informations de l'élève</h2>
+
+    <form class="form1 column" action="">
+        <div class="nom marge row">
+            <div class="nom column1">
+                <label for="nom">NOM</label>
+                <input class="case" type="text" name="name" id="nom" placeholder="Nom de l'eleve " required>
+            </div>
+            <div div class="nom column1">
+                <label for="prenom">Prenom</label>
+                <input type="text" name="prenom" id="prenom" placeholder="Prenom de l'eleve " required>
+            </div>
+        </div>
+        <div class="rest column2">
+            <div class="sexe marge1 column1">
+            <label class="" for="sexe">Sexe</label>
+                <select class="form-select" id="sexe">
+                    <option selected>Choisir...</option>
+                    <option value="1">Masculin</option>
+                    <option value="2">Feminin</option>
+                </select>
+        </div>
+         <div class="date_naissance marge1 column1">
+            <label for="naissance">Date de naissance</label>
+            <input class="naissance" type="text" name="naissance" id="naissance" placeholder="jour/mois/année " required>
+         </div>
+         <div class="lieu_naissance marge1 column1">
+            <label for="naissance">Lieu de naissance</label>
+            <input class="lieu_naissance" type="text" name="lieu_naissance" id="lieu_naissance"  required>
+         </div>
+         <div class="lieu_naissance marge1 column1">
+            <label for="naissance">Classe</label>
+            <input class="lieu_naissance" type="text" name="lieu_naissance" id="lieu_naissance"  required>
+         </div>
+        </div>
+          <div class="col-12">
+            <button type="submit" class="btn">Valider</button>
+        </div>
     </form>
+
+
+      <!--
+        - #INFO_PARENT
+      -->
+
+
+    <!--<header class="page column">
+        <h2>Informations du parent</h2>
+
+    <form class="form1 column" action="">
+        <div class="nom marge row">
+            <div class="nom column1">
+                <label for="nom">NOM</label>
+                <input class="case" type="text" name="name" id="nom" placeholder="Nom de l'eleve " required>
+            </div>
+            <div div class="nom column1">
+                <label for="prenom">Prenom</label>
+                <input type="text" name="prenom" id="prenom" placeholder="Prenom de l'eleve " required>
+            </div>
+        </div>
+        <div class="rest column2">
+            <div class="sexe marge1 column1">
+            <label class="" for="sexe">Sexe</label>
+                <select class="form-select" id="sexe">
+                    <option selected>Choisir...</option>
+                    <option value="1">Masculin</option>
+                    <option value="2">Feminin</option>
+                </select>
+        </div>
+         <div class="date_naissance marge1 column1">
+            <label for="naissance">Date de naissance</label>
+            <input class="naissance" type="text" name="naissance" id="naissance" placeholder="jour/mois/année " required>
+         </div>
+         <div class="lieu_naissance marge1 column1">
+            <label for="naissance">Lieu de naissance</label>
+            <input class="lieu_naissance" type="text" name="lieu_naissance" id="lieu_naissance"  required>
+         </div>
+        </div>
+          <div class="col-12">
+            <button type="submit" class="btn">Valider</button>
+        </div>
+    </form>-->
 
 
 
